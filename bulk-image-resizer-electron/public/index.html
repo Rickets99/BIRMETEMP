@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk Image Resizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Bulk Image Resizer</h1>
+            <form id="resizeForm">
+                <input type="file" id="imageInput" name="images" accept="image/*" multiple>
+                
+                <label for="widthSelect">Width:</label>
+                <select id="widthSelect" name="width">
+                    <option value="">Select width</option>
+                    <option value="512">512</option>
+                    <option value="1024">1024</option>
+                    <option value="1536">1536</option>
+                    <option value="2048">2048</option>
+                    <option value="2560">2560</option>
+                    <option value="3072">3072</option>
+                    <option value="3584">3584</option>
+                    <option value="4096">4096</option>
+                </select>
+
+                <label for="heightSelect">Height:</label>
+                <select id="heightSelect" name="height">
+                    <option value="">Select height</option>
+                    <option value="512">512</option>
+                    <option value="1024">1024</option>
+                    <option value="1536">1536</option>
+                    <option value="2048">2048</option>
+                    <option value="2560">2560</option>
+                    <option value="3072">3072</option>
+                    <option value="3584">3584</option>
+                    <option value="4096">4096</option>
+                </select>
+
+                <label for="cropOption">Crop Option:</label>
+                <select id="cropOption" name="cropOption">
+                    <option value="cover">Cover</option>
+                    <option value="contain">Contain</option>
+                    <option value="fill">Fill</option>
+                    <option value="inside">Inside</option>
+                    <option value="outside">Outside</option>
+                </select>
+
+                <label for="outputDirInput">Output Directory:</label>
+                <input type="text" id="outputDirInput" name="outputDir" readonly>
+                <button type="button" id="selectOutputDirButton">Select Output Directory</button>
+
+                <label for="openFolderCheckbox">Open folder after job completes</label>
+                <input type="checkbox" id="openFolderCheckbox" name="openFolder">
+
+                <button type="submit">Resize Images</button>
+            </form>
+            <div id="logContainer">
+                <h2>Logs</h2>
+                <div id="logFrame"></div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div id="imageDisplayFrame"></div>
+            <div id="output"></div>
+        </div>
+    </div>
+    <audio id="completionSound" src="complete.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
