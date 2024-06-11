@@ -9,6 +9,7 @@
 <h1>Bulk Image Resizer Electron App</h1>
 
 <p>This is an Electron application that resizes images in bulk.</p>
+<p><img src="https://github.com/Rickets99/BIRMETEMP/assets/144393706/de9e11eb-fdc7-445c-9c4b-b6ed6a206829" alt="BIRMETEMP"></p>
 
 <h2>Features</h2>
 <ul>
