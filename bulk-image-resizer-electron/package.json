@@ -1,14 +1,42 @@
 {
   "name": "bulk-image-resizer-electron",
   "version": "1.0.0",
+  "description": "Bulk Image Resizer Electron App",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.bulk-image-resizer",
+    "productName": "Bulk Image Resizer",
+    "files": [
+      "main.js",
+      "preload.js",
+      "package.json",
+      "public/**/*",
+      "uploads/"
+    ],
+    "directories": {
+      "buildResources": "build"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": false
+    }
+  },
+  "devDependencies": {
+    "electron": "^13.1.7",
+    "electron-builder": "^22.11.7"
   },
   "dependencies": {
-    "electron": "^13.1.7",
     "express": "^4.17.1",
-    "multer": "^1.4.3",
-    "sharp": "^0.28.3"
+    "multer": "^1.4.2",
+    "sharp": "^0.29.1"
   }
 }
