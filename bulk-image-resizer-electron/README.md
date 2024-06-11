@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
+    <title>Bulk Image Resizer Electron App</title>
 </head>
 <body>
 
@@ -13,12 +13,12 @@
 <h2>Features</h2>
 <ul>
     <li>Select multiple image files to resize</li>
-    <li>Choose width, height, and crop options (options in 512 multiples) </li>
+    <li>Choose width, height, and crop options</li>
     <li>Select output directory</li>
     <li>Option to open the output directory after resizing</li>
     <li>Logs the process in a log frame</li>
-    <li>Displays each image as it's being resized (not working yet) </li>
-    <li>Plays a sound when the job completes (not working yet)</li>
+    <li>Displays each image as it's being resized</li>
+    <li>Plays a sound when the job completes</li>
 </ul>
 
 <h2>Installation</h2>
@@ -29,7 +29,7 @@
     <li><a href="https://git-scm.com/" target="_blank">Git</a></li>
 </ul>
 
-<h3>Steps</h3>
+<h3>Steps for Developers</h3>
 <ol>
     <li>
         <p><strong>Clone the Repository:</strong></p>
@@ -50,6 +50,26 @@
     <li>
         <p><strong>Run the Application:</strong></p>
         <pre><code>npm start</code></pre>
+    </li>
+</ol>
+
+<h3>Steps for End Users</h3>
+<ol>
+    <li>
+        <p><strong>Download the Installer:</strong></p>
+        <p>Download the installer file from the provided source (e.g., a link on your website, an email, etc.).</p>
+    </li>
+    <li>
+        <p><strong>Run the Installer:</strong></p>
+        <p>Double-click the downloaded <code>.exe</code> file to start the installation process.</p>
+    </li>
+    <li>
+        <p><strong>Follow the Installation Wizard:</strong></p>
+        <p>Follow the prompts to complete the installation.</p>
+    </li>
+    <li>
+        <p><strong>Launch the Application:</strong></p>
+        <p>Find the application in the Start Menu or on the Desktop and launch it.</p>
     </li>
 </ol>
 
