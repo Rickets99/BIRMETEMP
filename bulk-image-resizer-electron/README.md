@@ -13,12 +13,12 @@
 <h2>Features</h2>
 <ul>
     <li>Select multiple image files to resize</li>
-    <li>Choose width, height, and crop options</li>
+    <li>Choose width, height, and crop options (options in 512 multiples) </li>
     <li>Select output directory</li>
     <li>Option to open the output directory after resizing</li>
     <li>Logs the process in a log frame</li>
-    <li>Displays each image as it's being resized</li>
-    <li>Plays a sound when the job completes</li>
+    <li>Displays each image as it's being resized (not working yet) </li>
+    <li>Plays a sound when the job completes (not working yet)</li>
 </ul>
 
 <h2>Installation</h2>
